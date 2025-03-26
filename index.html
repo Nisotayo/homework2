@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Carver Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Tyler Carver</h1>
+        <h2>NAU Student &amp; Data Science Researcher</h2>
+    </header>
+    <section id="introduction">
+        <p>
+            I am from Cave Creek Arizona, but I've lived in Flagstaff for the last 4 years. My wife's name is Phoebe, and we got married last June.
+            I am a grant funded researcher working with the BDL lab and the UQLID lab.
+            The goal of my research is to develop a predictive model for aneurysm formation in cerebral arteries, based on geometric data extracted from MRI & CT scans.
+        </p>
+    </section>
+    <section id="skills">
+        <h3>Skills</h3>
+        <h4>Programming Languages</h4>
+        <ul>
+            <li>Python</li>
+            <li>Rust</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Matlab</li>
+        </ul>
+        <h4>Frameworks &amp; Technologies</h4>
+        <ul>
+            <li>React</li>
+            <li>NGINX</li>
+            <li>AWS</li>
+            <li>SLURM</li>
+            <li>Torch</li>
+            <li>SQL</li>
+            <li>Jupyter Notebook</li>
+        </ul>
+        <h4>Specialties</h4>
+        <ul>
+            <li>Parallel programming</li>
+            <li>Cluster/Super computer optimized programming</li>
+            <li>Data science pipeline arcitecture</li>
+            <li>Linux system administration</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h3>Projects</h3>
+        <article>
+            <h4><u>CoWnalysisNN Research Project</u></h4>
+            <p>
+                I am the lead researcher responsible for development of the data analysis pipeline at the core of this project. 
+                The following is a high level overview of the pipeline:
+            </p>
+            <p>
+                First a CT or MRI scan is uploaded to the storage server through the frontend webserver. 
+                The scan is then uploaded to Monsoon so high performance GPU resources can be utilized.
+                Inference is performed on the scan using a custom neural network, which produces a segmentation mask that labels the different arteries. 
+                The segmentation mask is then processed with surface meshing, artery centerline extraction, and centerline angle extraction. 
+                Finally the data is sent back to the storage server where it is added to a database. 
+                Currently the data from over 5000 scans is being used to train a Bayesian neural network which will be our predictive model.
+            </p>
+            <figure style="display: inline-block;">
+                <img src="CT_scan.PNG" style="max-width: 300px;"></img>
+                <figcaption>Raw CT scan 3D image volume</figcaption>
+            </figure>
+            <figure style="display: inline-block;">
+                <img src="CoW.PNG" style="max-width: 300px;"></img>
+                <figcaption>Circle of Willis arteries extracted and analyzed</figcaption>
+            </figure>
+        </article>
+        <article>
+            <h4><u>Custom Gaming PC</u></h4>
+            <p>
+                I have built over 20 bespoke desktop computers over the last decade for friends and family. These computers have ranged in budget
+                and purpose, from $300 media servers to $8000 professional workstations and gaming computers. The computer pictured here is not only
+                the most powerful computer I own, it also represents the culmination of the skills I've developed concerning aesthetics.
+            </p>
+            <p>
+                It features an Nvidia RTX 3080 graphics card with both front and back EK Quantum waterblocks, paired with a Ryzen 9 3900X cpu with
+                an EK Quantum waterblock. The cooling system uses rigid clear acrylic tubes bent by hand, connecting everything to a large 480mm radiator.
+            </p>
+            <figure style="display: inline-block;">
+                <img src="PC_complete.png" style="max-width: 300px;"></img>
+                <figcaption>Turned on with RGB lighting</figcaption>
+            </figure>
+            <figure style="display: inline-block;">
+                <img src="PC_building.jpg" style="max-width: 300px;"></img>
+                <figcaption>When I was building it</figcaption>
+            </figure>
+        </article>
+    </section>
+    <section id="education-experience">
+        <h3>Education &amp; Experience</h3> 
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Institution/Company</th>
+                    <th>Degree/Position</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Work Experience Row Example -->
+                <tr>
+                    <td>2021 - 2024</td>
+                    <td>SoulPedal - CleanStage LLC</td>
+                    <td>Primary CAD & CAM Designer</td>
+                    <td>Tech startup that created a wearable smart device</td>
+                </tr>
+                <!-- Education Row Example -->
+                <tr>
+                    <td>2022-2024</td>
+                    <td>Coconino Community College</td>
+                    <td>Associates of Science</td>
+                    <td>CCC to NAU program</td>
+                </tr>
+                <!-- Education Row Example -->
+                <tr>
+                    <td rowspan="4">2024 - Present</td>
+                    <td rowspan="2">Northern Arizona University</td>
+                    <td>Bachelor of Science in Computer Science</td>
+                    <td rowspan="2">Dual major in progress with intent to pursue a PHD</td>
+                    <tr>
+                        <td>Bachelor of Science in Physics</td>
+                    </tr>
+                    
+                </tr>
+                <!-- Work Experience Row Example -->
+                <tr>
+                    <td rowspan="2">NAU College of Engineering</td>
+                    <td>Student Researcher BDL Lab</td>
+                    <td rowspan="2">Principal Investigator & Developer for CoWnalysisNN project</td>
+                    <tr>
+                        <td>Student Researcher UQLID Lab</td>
+                    </tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="resume-download">
+        <h3>Resume</h3>
+        <p>
+            You can download my resume here: 
+            <a 
+              href="Tyler_Carver_Resume.pdf" 
+              download="Tyler_Carver_Resume.pdf" 
+              target="_blank">
+              Download Resume
+            </a>
+        </p>
+    </section>
+    <footer>
+        <h3>Contact Me</h3>
+        <p>
+            <strong>Email:</strong> <a href="mailto:tdc266@nau.edu">tdc266@nau.edu</a><br>
+            <strong>Phone:</strong> <a href="tel:6026204822">602-620-4822</a><br>
+        </p>
+    </footer>
+
+</body>
+</html>
